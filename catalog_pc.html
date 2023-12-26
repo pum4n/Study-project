@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Device</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header container">
+        <a href="index.html" class="header-logo interactive-exception">
+            <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+        <div class="header-background">
+            <nav class="user-nav">
+                <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
+                    <input class="input-search" type="search" name="search" placeholder="Поиск по сайту">
+                    <button class="btn-search" type="submit">Search</button>
+                </form>
+                <ul class="user no-markers interactive">
+                </ul>
+            </nav>
+            <nav class="main-navigation">
+                <ul class="main-menu no-markers">
+                    <li class="catalog-list">
+                        <a href="#" class="main-catalog catalog interactive-exception">Product Catalog</a>
+                        <ul class="sub-menu no-markers interactive">
+                            <li class="column column-1">
+                                <ul class="no-markers interactive">
+                                    <li><a href="catalog_pc.html">Personal Computer</a></li>
+                                    <li><a href="catalog_ss.html">Selfie Sticks</a></li>
+                                    <li><a href="#">Action Cameras</a></li>
+                                </ul>
+                            </li>
+                            <li class="column column-2">
+                                <ul class="no-markers interactive">
+                                    <li><a href="#">Fitness Bracelets</a></li>
+                                    <li><a href="#">Smart Watches</a></li>
+                                </ul>
+                            </li>
+                            <li class="column column-3">
+                                <ul class="no-markers interactive">
+                                    <li><a href="#">Quadcopters</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="catalog delivery-btn interactive-exception">Delivery</a></li>
+                    <li><a href="#" class="catalog gwarrancy-btn interactive-exception">Warranty</a></li>
+                    <li><a href="#" class="catalog contact-btn interactive-exception">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="page-title">Personal Computer</h1>
+            <ul class="breadcrumbs no-markers">
+                <li class="main-page"><a href="index.html">Home</a></li>
+                <li class="breadcrumbs-catalog second-crumb"><a href="#">Product Catalog</a></li>
+                <li class="breadcrumbs-current-list"><span class="breadcrumbs-current">Personal Computer</span></li>
+            </ul>
+        </div>
+        <div class="filter-title-wc">
+            <div class="filter-title-block container">
+                <div class="filter-h">
+                    <h3 class="filter-title">FILTER:</h3>
+                </div>
+                <div class="catalog-sort">
+                    <h3 class="sort-title">SORT:</h3>
+                    <ul class="sort-type no-markers">
+                        <li>
+                            <span id="sort-by-price" class="current">By Price</span>
+                        </li>
+                        <li><a id="sort-by-type" href="#">By Type</a></li>
+                        <li><a id="sort-by-popularity" href="#">By Popularity</a></li>
+                    </ul>
+                    <div class="sort-direction">
+                        <a class="btn-up" href="#"><span class="visually-hidden">up</span></a>
+                        <a class="btn-down current"><span class="visually-hidden">down</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-shop-wc">
+            <div class="main-shop container">
+                <section class="filter">
+                    <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+                        <fieldset>
+                            <legend class="form-legend">Cost</legend>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="selected-price">
+                                    <span class="price-from">from 0</span>
+                                    <span class="price-to">to 5000</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="form-legend">Color</legend>
+                            <ul class="filter-color no-markers">
+                                <li>
+                                    <input type="checkbox" id="filter-color-black" name="filter-color-black" checked>
+                                    <label for="filter-color-black">Black</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-color-white" name="filter-color-white">
+                                    <label for="filter-color-white">White</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-color-blue" name="filter-color-blue" checked>
+                                    <label for="filter-color-blue">Blue</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-color-red" name="filter-color-red" checked>
+                                    <label for="filter-color-red">Red</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-color-pink" name="filter-color-pink">
+                                    <label for="filter-color-pink">Pink</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="form-legend">Bluetooth</legend>
+                            <ul class="filter-bluetooth no-markers">
+                                <li>
+                                    <input type="radio" name="bluetooth" id="blth-yes" value="Yes" checked>
+                                    <label for="blth-yes">Yes</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bluetooth" id="blth-no" value="No">
+                                    <label for="blth-no">No</label>
+                                </li>
+                            </ul>
+                            <button class="filter-button" type="submit">Show</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="items-section">
+                    <ul class="items-block no-markers" id="product-list"></ul>
+                        <div id="pagination" class="catalog-nav no-markers"></div>
+                        <div id="page-num" class="pages-styles"></div>
+                      
+                        <div id="product-list" class="product-list"></div>
+                        <div id="pagination" class="pagination"></div>
+
+                    <!-- <ul class="catalog-nav no-markers">
+                      <li>
+                        <a class="nav-prev" href="catalog_pc.html">BACK</a>
+                      </li>
+                      <li class="current first-page page-number">1</li>
+                      <li>
+                        <a href="catalog_pc.html" class="page-number">2</a>
+                      </li>
+                      <li>
+                        <a href="catalog_pc.html" class="page-number">3</a>
+                      </li>
+                      <li>
+                        <a class="nav-next" href="catalog_pc.html">FORWARD</a>
+                      </li>
+                    </ul> -->
+                </section>                  
+            </div>
+        </div>
+    </main>
+
+
+    <section class="container content-section" id="shopping-cart">
+
+        <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+
+        <table class="table table-hover table-cart">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items">
+
+
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" style="text-align: right;">$0</span>
+        </div>
+
+
+        <div class="btn-purchase" style="margin-top: 10%;">
+            <button type="button" class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping "
+                    style="margin-right: 6%;"></i>PURCHASE</button>
+        </div>
+
+    </section>
+
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a class="footer-logo interactive-exception" href="index.html">
+                    <img src="img/svg/logo-footer.svg" width="163" height="35" alt="Device Store Logo">
+                </a>
+
+                <!-- <nav class="footer-user-navigation">
+                    <ul class="user-footer no-markers">
+                        <li class="footer-log-in-list">
+                            <a href="#" class="footer-user">Valentin Petukhov</a>
+                            <a href="#" class="footer-quit">Logout</a>
+                        </li>
+                         <li class="footer-compare-list">
+                            <a href="#" class="footer-compare">Compare</a>
+                        </li> 
+                        <li class="footer-cart-list">
+                            <a href="#" class="footer-cart">Cart</a>
+                        </li>
+                    </ul>
+                </nav> -->
+            </div>
+
+            <div class="footer-middle">
+                <address class="footer-address">Lviv Grimne Myru 9</address>
+
+                <nav class="footer-navigation">
+                    <ul class="footer-navigation-items no-markers">
+                        <li class="delivery-list">
+                            <a href="#">Delivery</a>
+                        </li>
+                        <li class="warranty-list">
+                            <a href="#">Warranty</a>
+                        </li>
+                        <li class="contacts-list">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="tel">Phone: +380(097)456123</span>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <ul class="social no-markers">
+                        <li>
+                            <a href="#" class="social-fb">
+                                <span class="visually-hidden">Facebook</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#FFF"
+                                        d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-inst">
+                                <span class="visually-hidden">Instagram</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <g fill="#FFF">
+                                        <path
+                                            d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
+                                        <path
+                                            d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z" />
+                                        <path
+                                            d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-tw"><span class="visually-hidden">Twitter</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#FFF"
+                                        d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    
+
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-logo">
+                        <img src="img/svg/logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/items_pc.js"></script>
+<script src="js/shop_cart.js"></script>
+</html>
